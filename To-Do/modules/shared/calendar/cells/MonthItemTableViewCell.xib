@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="480" id="KGk-i7-Jjw" customClass="MonthItemTableViewCell" customModule="To_Do" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="831" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="831" height="480"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIs-YS-uyh">
+                        <rect key="frame" x="20" y="11" width="791" height="458"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vk-42-il1">
+                                <rect key="frame" x="0.0" y="0.0" width="791" height="68.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKA-In-2kf">
+                                        <rect key="frame" x="142.5" y="17" width="624.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aij-7X-JWH">
+                                        <rect key="frame" x="142.5" y="66.5" width="624.5" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="oRt-sJ-M5W"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="HKA-In-2kf" firstAttribute="leading" secondItem="Aij-7X-JWH" secondAttribute="leading" id="8Oh-W7-zPC"/>
+                                    <constraint firstAttribute="trailing" secondItem="HKA-In-2kf" secondAttribute="trailing" constant="24" id="PuJ-2w-cg8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aij-7X-JWH" secondAttribute="trailing" constant="24" id="bQT-hc-Ge7"/>
+                                    <constraint firstAttribute="bottom" secondItem="HKA-In-2kf" secondAttribute="bottom" constant="24" id="sUo-NP-zan"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdJ-xI-2N5">
+                                <rect key="frame" x="0.0" y="68.5" width="118.5" height="389.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="f8c-7k-To8">
+                                        <rect key="frame" x="10" y="10" width="96.5" height="369.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6f5-M2-hOB">
+                                                <rect key="frame" x="0.0" y="0.0" width="96.5" height="53"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-zu-yl9">
+                                                        <rect key="frame" x="29.5" y="14" width="37.5" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="G1P-zu-yl9" firstAttribute="centerX" secondItem="6f5-M2-hOB" secondAttribute="centerX" id="2MI-2E-VrY"/>
+                                                    <constraint firstItem="G1P-zu-yl9" firstAttribute="centerY" secondItem="6f5-M2-hOB" secondAttribute="centerY" id="cG5-ye-WpN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxF-Z1-krF">
+                                                <rect key="frame" x="0.0" y="53" width="96.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1g-eY-RO2">
+                                                        <rect key="frame" x="35" y="14" width="27" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="D1g-eY-RO2" firstAttribute="centerX" secondItem="cxF-Z1-krF" secondAttribute="centerX" id="pQ9-1b-47u"/>
+                                                    <constraint firstItem="D1g-eY-RO2" firstAttribute="centerY" secondItem="cxF-Z1-krF" secondAttribute="centerY" id="sYk-6w-N4q"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-LB-szy">
+                                                <rect key="frame" x="0.0" y="105.5" width="96.5" height="53"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6p-Gd-zMf">
+                                                        <rect key="frame" x="30" y="14" width="36.5" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="h6p-Gd-zMf" firstAttribute="centerX" secondItem="xyG-LB-szy" secondAttribute="centerX" id="XtN-eo-xcl"/>
+                                                    <constraint firstItem="h6p-Gd-zMf" firstAttribute="centerY" secondItem="xyG-LB-szy" secondAttribute="centerY" id="j1i-w1-pnu"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKc-SH-vXm">
+                                                <rect key="frame" x="0.0" y="158.5" width="96.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="thu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZH-6k-QP3">
+                                                        <rect key="frame" x="34.5" y="14" width="27.5" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="IZH-6k-QP3" firstAttribute="centerX" secondItem="QKc-SH-vXm" secondAttribute="centerX" id="5FP-v0-uHw"/>
+                                                    <constraint firstItem="IZH-6k-QP3" firstAttribute="centerY" secondItem="QKc-SH-vXm" secondAttribute="centerY" id="brc-EJ-s6Z"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvc-18-4Yi">
+                                                <rect key="frame" x="0.0" y="211" width="96.5" height="53"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScK-aA-xz9">
+                                                        <rect key="frame" x="39.5" y="14" width="17.5" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ScK-aA-xz9" firstAttribute="centerX" secondItem="Tvc-18-4Yi" secondAttribute="centerX" id="g5S-KT-S9n"/>
+                                                    <constraint firstItem="ScK-aA-xz9" firstAttribute="centerY" secondItem="Tvc-18-4Yi" secondAttribute="centerY" id="nzG-aE-06M"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h8a-vh-Te9">
+                                                <rect key="frame" x="0.0" y="264" width="96.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l99-sN-auN">
+                                                        <rect key="frame" x="36.5" y="14" width="24" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="l99-sN-auN" firstAttribute="centerX" secondItem="h8a-vh-Te9" secondAttribute="centerX" id="Pl3-uR-qOn"/>
+                                                    <constraint firstItem="l99-sN-auN" firstAttribute="centerY" secondItem="h8a-vh-Te9" secondAttribute="centerY" id="V2v-Fc-XGx"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eA-55-bOb">
+                                                <rect key="frame" x="0.0" y="316.5" width="96.5" height="53"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2r-u9-SVM">
+                                                        <rect key="frame" x="34" y="14" width="29" height="25"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="g2r-u9-SVM" firstAttribute="centerX" secondItem="3eA-55-bOb" secondAttribute="centerX" id="Iug-CN-hAz"/>
+                                                    <constraint firstItem="g2r-u9-SVM" firstAttribute="centerY" secondItem="3eA-55-bOb" secondAttribute="centerY" id="ypS-20-BKe"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZxJ-Np-fsJ">
+                                        <rect key="frame" x="116.5" y="10" width="2" height="369.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2" id="agj-df-gaX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="f8c-7k-To8" firstAttribute="top" secondItem="YdJ-xI-2N5" secondAttribute="top" constant="10" id="33T-4c-Qyz"/>
+                                    <constraint firstItem="ZxJ-Np-fsJ" firstAttribute="top" secondItem="YdJ-xI-2N5" secondAttribute="top" constant="10" id="Fgp-Ta-CsZ"/>
+                                    <constraint firstItem="f8c-7k-To8" firstAttribute="leading" secondItem="YdJ-xI-2N5" secondAttribute="leading" constant="10" id="GTT-i6-A6O"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZxJ-Np-fsJ" secondAttribute="bottom" constant="10" id="TLm-v3-OsU"/>
+                                    <constraint firstAttribute="bottom" secondItem="f8c-7k-To8" secondAttribute="bottom" constant="10" id="XUV-BY-mZJ"/>
+                                    <constraint firstItem="ZxJ-Np-fsJ" firstAttribute="leading" secondItem="f8c-7k-To8" secondAttribute="trailing" constant="10" id="ccQ-An-DvA"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZxJ-Np-fsJ" secondAttribute="trailing" id="rzf-QM-aQK"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8cN-xJ-b0X">
+                                <rect key="frame" x="128.5" y="78.5" width="652.5" height="369.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7bx-pQ-8Mf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YdJ-xI-2N5" firstAttribute="top" secondItem="Aij-7X-JWH" secondAttribute="bottom" id="2r2-kv-0qD"/>
+                            <constraint firstItem="YdJ-xI-2N5" firstAttribute="leading" secondItem="nIs-YS-uyh" secondAttribute="leading" id="5nn-5L-hd7"/>
+                            <constraint firstAttribute="bottom" secondItem="8cN-xJ-b0X" secondAttribute="bottom" constant="10" id="623-Eb-mEc"/>
+                            <constraint firstItem="8cN-xJ-b0X" firstAttribute="top" secondItem="6Vk-42-il1" secondAttribute="bottom" constant="10" id="Fn6-Xh-Dq1"/>
+                            <constraint firstItem="YdJ-xI-2N5" firstAttribute="width" secondItem="nIs-YS-uyh" secondAttribute="width" multiplier="0.15" id="KkY-Vj-IAK"/>
+                            <constraint firstItem="8cN-xJ-b0X" firstAttribute="leading" secondItem="YdJ-xI-2N5" secondAttribute="trailing" constant="10" id="RAT-1U-nHT"/>
+                            <constraint firstAttribute="bottom" secondItem="YdJ-xI-2N5" secondAttribute="bottom" id="VoX-My-8zv"/>
+                            <constraint firstAttribute="trailing" secondItem="8cN-xJ-b0X" secondAttribute="trailing" constant="10" id="WSx-QN-xHz"/>
+                            <constraint firstItem="6Vk-42-il1" firstAttribute="top" secondItem="nIs-YS-uyh" secondAttribute="top" id="aAl-41-EXF"/>
+                            <constraint firstItem="Aij-7X-JWH" firstAttribute="leading" secondItem="YdJ-xI-2N5" secondAttribute="trailing" constant="24" id="alm-RF-Tc3"/>
+                            <constraint firstItem="6Vk-42-il1" firstAttribute="height" secondItem="nIs-YS-uyh" secondAttribute="height" multiplier="0.15" id="hfQ-H3-Vt3"/>
+                            <constraint firstAttribute="trailing" secondItem="6Vk-42-il1" secondAttribute="trailing" id="ikg-ea-vem"/>
+                            <constraint firstItem="6Vk-42-il1" firstAttribute="leading" secondItem="nIs-YS-uyh" secondAttribute="leading" id="j5G-wr-Nwz"/>
+                            <constraint firstItem="YdJ-xI-2N5" firstAttribute="top" secondItem="6Vk-42-il1" secondAttribute="bottom" id="x7h-iu-kdH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="nIs-YS-uyh" secondAttribute="trailing" id="ETs-FP-eQe"/>
+                    <constraint firstItem="nIs-YS-uyh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cMO-JU-MNL"/>
+                    <constraint firstItem="nIs-YS-uyh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ok2-1p-FBA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nIs-YS-uyh" secondAttribute="bottom" id="tK4-SZ-UJB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionViewDays" destination="8cN-xJ-b0X" id="LYp-uP-tC7"/>
+                <outlet property="lblMonthTitle" destination="HKA-In-2kf" id="0yx-TV-a27"/>
+            </connections>
+            <point key="canvasLocation" x="506.52173913043481" y="234.375"/>
+        </tableViewCell>
+    </objects>
+</document>

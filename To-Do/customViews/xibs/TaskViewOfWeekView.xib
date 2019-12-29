@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskViewOfWeekView" customModule="To_Do" customModuleProvider="target">
+            <connections>
+                <outlet property="lblTaskTitle" destination="zmr-0F-N9j" id="eCB-KC-uyc"/>
+                <outlet property="viewTaskViewBackground" destination="Wvt-jE-CoF" id="D8O-2d-41J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvt-jE-CoF" customClass="CardView" customModule="To_Do" customModuleProvider="target">
+                    <rect key="frame" x="5" y="5" width="404" height="886"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmr-0F-N9j">
+                            <rect key="frame" x="5" y="5" width="394" height="876"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="zmr-0F-N9j" firstAttribute="leading" secondItem="Wvt-jE-CoF" secondAttribute="leading" constant="5" id="3tH-8J-xUq"/>
+                        <constraint firstItem="zmr-0F-N9j" firstAttribute="top" secondItem="Wvt-jE-CoF" secondAttribute="top" constant="5" id="caG-7m-Cla"/>
+                        <constraint firstAttribute="trailing" secondItem="zmr-0F-N9j" secondAttribute="trailing" constant="5" id="obb-bL-y4y"/>
+                        <constraint firstAttribute="bottom" secondItem="zmr-0F-N9j" secondAttribute="bottom" constant="5" id="q5Z-OS-oi3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowCornerRaduis">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Wvt-jE-CoF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="l9G-av-GPb"/>
+                <constraint firstAttribute="bottom" secondItem="Wvt-jE-CoF" secondAttribute="bottom" constant="5" id="pnK-uu-Y2o"/>
+                <constraint firstAttribute="trailing" secondItem="Wvt-jE-CoF" secondAttribute="trailing" constant="5" id="uNs-CT-d6I"/>
+                <constraint firstItem="Wvt-jE-CoF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="zqI-9A-MCI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowCornerRaduis">
+                    <real key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+</document>

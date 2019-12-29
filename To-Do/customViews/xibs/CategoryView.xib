@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontFont_FF.Mark.Pro.Bold.otf">
+            <string>MarkPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryView" customModule="To_Do" customModuleProvider="target">
+            <connections>
+                <outlet property="lblCategorySymbol" destination="QA0-lt-8Ma" id="8oO-ef-CEJ"/>
+                <outlet property="viewBackGround" destination="dc3-Pa-9WT" id="NNh-r8-cns"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dc3-Pa-9WT" customClass="CardView" customModule="To_Do" customModuleProvider="target">
+                    <rect key="frame" x="5" y="49" width="404" height="233"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QA0-lt-8Ma">
+                            <rect key="frame" x="5" y="5" width="394" height="223"/>
+                            <fontDescription key="fontDescription" name="MarkPro-Bold" family="Mark Pro" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="QA0-lt-8Ma" firstAttribute="top" secondItem="dc3-Pa-9WT" secondAttribute="top" constant="5" id="Wdc-lr-Dgs"/>
+                        <constraint firstItem="QA0-lt-8Ma" firstAttribute="leading" secondItem="dc3-Pa-9WT" secondAttribute="leading" constant="5" id="bEh-IN-SAA"/>
+                        <constraint firstAttribute="trailing" secondItem="QA0-lt-8Ma" secondAttribute="trailing" constant="5" id="vem-4V-7eS"/>
+                        <constraint firstAttribute="bottom" secondItem="QA0-lt-8Ma" secondAttribute="bottom" constant="5" id="vhM-Ue-Isd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowCornerRaduis">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dc3-Pa-9WT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="7BZ-fI-G25"/>
+                <constraint firstItem="dc3-Pa-9WT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="9JP-K7-azq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dc3-Pa-9WT" secondAttribute="trailing" constant="5" id="J7x-QM-h8C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dc3-Pa-9WT" secondAttribute="bottom" constant="5" id="O6r-ic-KZZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-96.09375"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DayItemCollectionViewCell" customModule="To_Do" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="133"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ji-da-iHB" customClass="CardView" customModule="To_Do" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="162" height="123"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDT-dP-PCH">
+                                <rect key="frame" x="0.0" y="0.0" width="162" height="123"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IDT-dP-PCH" secondAttribute="bottom" id="TIG-S9-hPd"/>
+                            <constraint firstItem="IDT-dP-PCH" firstAttribute="leading" secondItem="3ji-da-iHB" secondAttribute="leading" id="dOX-Wz-6Dx"/>
+                            <constraint firstAttribute="trailing" secondItem="IDT-dP-PCH" secondAttribute="trailing" id="g2s-qx-jmU"/>
+                            <constraint firstItem="IDT-dP-PCH" firstAttribute="top" secondItem="3ji-da-iHB" secondAttribute="top" id="hrL-lS-vRg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3ji-da-iHB" secondAttribute="trailing" constant="5" id="AfV-KI-4Pw"/>
+                <constraint firstItem="3ji-da-iHB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="nJd-Xy-6Z0"/>
+                <constraint firstItem="3ji-da-iHB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="szK-i3-zyy"/>
+                <constraint firstAttribute="bottom" secondItem="3ji-da-iHB" secondAttribute="bottom" constant="5" id="t80-CW-1rm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="172" height="133"/>
+            <connections>
+                <outlet property="lblDay" destination="IDT-dP-PCH" id="wgo-pU-Z6N"/>
+                <outlet property="viewdayBackGround" destination="3ji-da-iHB" id="OEg-Sp-UxJ"/>
+            </connections>
+            <point key="canvasLocation" x="226.08695652173915" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

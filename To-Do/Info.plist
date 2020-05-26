@@ -2,11 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>FontFont_FF.Mark.Pro.Bold.otf</string>
-		<string>FontFont_FF.Mark.Pro.otf</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -36,7 +31,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.515693111076-cid98u3jc272h98fg7vrlleb0e26garc</string>
+				<string>com.googleusercontent.apps.213903006505-m3b2h3s8ub2mjvrfgvbfats36lvceb65</string>
 			</array>
 		</dict>
 	</array>
@@ -55,6 +50,11 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FontFont_FF.Mark.Pro.Bold.otf</string>
+		<string>FontFont_FF.Mark.Pro.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

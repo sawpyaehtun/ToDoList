@@ -21,7 +21,7 @@
 		D00195BF239F4CAD0070BA32 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00195BD239F4CAD0070BA32 /* CalendarViewController.xib */; };
 		D00195C1239F4CD50070BA32 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00195C0239F4CD50070BA32 /* CalendarViewModel.swift */; };
 		D007A049239E074000535583 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D007A048239E074000535583 /* RoundedCornerButton.swift */; };
-		D00B90AB239BCAA20001D665 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00B90AA239BCAA20001D665 /* GoogleService-Info.plist */; };
+		D00A692A247D0E0D003D6A3D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D00A6929247D0E0D003D6A3D /* GoogleService-Info.plist */; };
 		D00B90AE239BCC2E0001D665 /* CommonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B90AC239BCC2E0001D665 /* CommonManager.swift */; };
 		D00B90AF239BCC2E0001D665 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B90AD239BCC2E0001D665 /* AlertManager.swift */; };
 		D01165B5239F50100072FF83 /* YearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01165B4239F50100072FF83 /* YearView.swift */; };
@@ -130,7 +130,8 @@
 		D00195BD239F4CAD0070BA32 /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		D00195C0239F4CD50070BA32 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		D007A048239E074000535583 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
-		D00B90AA239BCAA20001D665 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D00A6929247D0E0D003D6A3D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D00A692B247D1110003D6A3D /* To-Do.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "To-Do.entitlements"; sourceTree = "<group>"; };
 		D00B90AC239BCC2E0001D665 /* CommonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonManager.swift; sourceTree = "<group>"; };
 		D00B90AD239BCC2E0001D665 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		D01165B4239F50100072FF83 /* YearView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearView.swift; sourceTree = "<group>"; };
@@ -158,7 +159,6 @@
 		D06EE5BA23A2229C006781C6 /* TimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
 		D074F866239D1A9B0060D878 /* CreateNewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTaskViewController.swift; sourceTree = "<group>"; };
 		D074F867239D1A9B0060D878 /* CreateNewTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewTaskViewController.xib; sourceTree = "<group>"; };
-		D074F86A239D496F0060D878 /* To-Do.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "To-Do.entitlements"; sourceTree = "<group>"; };
 		D074F86D239DDD520060D878 /* NotificationVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVO.swift; sourceTree = "<group>"; };
 		D074F86F239DE9380060D878 /* TaskVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskVO.swift; sourceTree = "<group>"; };
 		D074F871239DE9BB0060D878 /* CategoryVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVO.swift; sourceTree = "<group>"; };
@@ -254,10 +254,10 @@
 		34DEB58F239B709300601D23 /* To-Do */ = {
 			isa = PBXGroup;
 			children = (
+				D00A692B247D1110003D6A3D /* To-Do.entitlements */,
 				D0D0916223A5F68400F7D7AE /* Assets.xcassets */,
 				D013BF9423A4287F00149F0D /* fonts */,
 				D08928B223A34948007BC8CA /* providers */,
-				D074F86A239D496F0060D878 /* To-Do.entitlements */,
 				D0431334239BA2970012D103 /* base */,
 				D0431311239B8B9D0012D103 /* models */,
 				D0431310239B8B950012D103 /* customViews */,
@@ -269,8 +269,8 @@
 				34DEB592239B709300601D23 /* SceneDelegate.swift */,
 				34DEB5A1239B709500601D23 /* Info.plist */,
 				34DEB599239B709300601D23 /* To_Do.xcdatamodeld */,
-				D00B90AA239BCAA20001D665 /* GoogleService-Info.plist */,
 				D076C08323AE841600639005 /* Launch Screen.storyboard */,
+				D00A6929247D0E0D003D6A3D /* GoogleService-Info.plist */,
 			);
 			path = "To-Do";
 			sourceTree = "<group>";
@@ -875,6 +875,7 @@
 				D01165B7239F501B0072FF83 /* YearView.xib in Resources */,
 				D0EB39EE23AAAF8D00FE321F /* TaskViewOfWeekView.xib in Resources */,
 				D0D0916923A5FA3000F7D7AE /* CategoryView.xib in Resources */,
+				D00A692A247D0E0D003D6A3D /* GoogleService-Info.plist in Resources */,
 				D0F0EA9F239F84CF00EDE052 /* MonthItemTableViewCell.xib in Resources */,
 				D0D0916323A5F68400F7D7AE /* Assets.xcassets in Resources */,
 				D0EB39E623AA776300FE321F /* DayViewOfWeekView.xib in Resources */,
@@ -899,7 +900,6 @@
 				D076C08423AE841600639005 /* Launch Screen.storyboard in Resources */,
 				D013BF9223A4286D00149F0D /* FontFont_FF.Mark.Pro.Bold.otf in Resources */,
 				D0EB39EA23AA8C8100FE321F /* TaskViewBackgroundOfWeekView.xib in Resources */,
-				D00B90AB239BCAA20001D665 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1108,7 +1108,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1163,7 +1163,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "-objc";
@@ -1183,14 +1183,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8S9A7846PV;
 				INFOPLIST_FILE = "To-Do/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saw.padc.todo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saw.ToDoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1203,6 +1204,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 64F6CM5Y8X;
 				INFOPLIST_FILE = "To-Do/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1210,7 +1212,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.padc.To-Do";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

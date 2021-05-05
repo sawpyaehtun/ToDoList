@@ -13,6 +13,7 @@
 		34DEB595239B709300601D23 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DEB594239B709300601D23 /* LoginViewController.swift */; };
 		34DEB598239B709300601D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DEB596239B709300601D23 /* Main.storyboard */; };
 		34DEB59B239B709300601D23 /* To_Do.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34DEB599239B709300601D23 /* To_Do.xcdatamodeld */; };
+		88D6427B26424B3C00CAEAA9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88D6427A26424B3C00CAEAA9 /* LoginViewController.xib */; };
 		D00176F723A630850020396F /* ThemeItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00176F523A630850020396F /* ThemeItemTableViewCell.swift */; };
 		D00176F823A630850020396F /* ThemeItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D00176F623A630850020396F /* ThemeItemTableViewCell.xib */; };
 		D00195B8239F4B7B0070BA32 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00195B6239F4B7A0070BA32 /* DateExtension.swift */; };
@@ -120,6 +121,7 @@
 		34DEB597239B709300601D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34DEB59A239B709300601D23 /* To_Do.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = To_Do.xcdatamodel; sourceTree = "<group>"; };
 		34DEB5A1239B709500601D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88D6427A26424B3C00CAEAA9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		A6351A1584E9AF28186669DF /* Pods-To-Do.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-To-Do.release.xcconfig"; path = "Target Support Files/Pods-To-Do/Pods-To-Do.release.xcconfig"; sourceTree = "<group>"; };
 		B3CB038316671A23A2780037 /* Pods-To-Do.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-To-Do.debug.xcconfig"; path = "Target Support Files/Pods-To-Do/Pods-To-Do.debug.xcconfig"; sourceTree = "<group>"; };
 		D00176F523A630850020396F /* ThemeItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				34DEB596239B709300601D23 /* Main.storyboard */,
+				88D6427A26424B3C00CAEAA9 /* LoginViewController.xib */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -891,6 +894,7 @@
 				D06463A8239F563600AE3718 /* YearPicker.xib in Resources */,
 				D00195BF239F4CAD0070BA32 /* CalendarViewController.xib in Resources */,
 				D09B061F23A3EB0300486110 /* TestViewController.xib in Resources */,
+				88D6427B26424B3C00CAEAA9 /* LoginViewController.xib in Resources */,
 				34DEB598239B709300601D23 /* Main.storyboard in Resources */,
 				D0F0EAA3239F852400EDE052 /* WeekDayView.xib in Resources */,
 				D0C920E923A2C41600B6EEFF /* ThemeView.xib in Resources */,

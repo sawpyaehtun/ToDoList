@@ -33,18 +33,15 @@ class MainViewController: BaseViewController {
     
     override func setUpUIs() {
         super.setUpUIs()
-        //        btnEdit.isHidden = false
         setUpTableViews()
     }
     
     
     private func setUpTableViews(){
+        
         tableViewTaskList.delegate = self
         tableViewTaskList.dataSource = self
-        
-        //        tableViewTaskList.bounces = false
-        //        tableViewCategoryList.bounces = false
-        
+                
         tableViewTaskList.registerForCell(strID: String(describing: TaskItemTableViewCell.self))
         tableViewCategoryList.registerForCell(strID: String(describing: CategoryItemTableViewCell.self))
         tableViewCategoryList.rowHeight = UIScreen.main.bounds.width * 0.22 * 0.7
@@ -71,7 +68,7 @@ class MainViewController: BaseViewController {
         viewModel.isSuccessLogoutBehaviorRelay.subscribe(onNext: { (isSuccessed) in
             if isSuccessed {
                 AlertManager.showAlert("Logout", message: "You are successfully logout!", inViewController: self)
-                self.dismissThis(animated: true)
+                self.gotoLoginScreen()
             }
             }).disposed(by: disposableBag)
         viewModel.selectedIndexInCategoryListBehaviorRelay.subscribe(onNext: { (index) in
@@ -111,7 +108,6 @@ class MainViewController: BaseViewController {
         }).disposed(by: disposableBag)
         
     }
-    
     
 }
 
@@ -247,7 +243,7 @@ extension MainViewController {
     }
 }
 
-// MARK: - controller transaction
+// MARK: - Navigation
 extension MainViewController {
     private func goToCreateNewTask() {
         view.endEditing(true)
@@ -274,6 +270,13 @@ extension MainViewController {
         let vc = CreateCategoryViewController.init()
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
+    }
+    
+    private func gotoLoginScreen(){
+        let scence = UIApplication.shared.connectedScenes.first
+        if let delegate = scence?.delegate as? SceneDelegate {
+            delegate.setRootViewController()
+        }
     }
 }
 
